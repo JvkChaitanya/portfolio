@@ -8,10 +8,11 @@
     <style>
         .title-slide {
             height: 100vh;
+            width: 100vw;
             display: flex;
             justify-content: center;
             align-items: center;
-            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            background: url('images/pic03.jpg') center/cover no-repeat;
             transition: opacity 1s ease-out;
             color: white;
         }
@@ -80,192 +81,196 @@
         .social-icon:hover img {
             transform: scale(1.2);
         }
-        </style>
-    </head>
-    <body>
-        <?php include 'header.html'; ?>
-        <header>
-            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-                <a class="navbar-brand" href="#">Portfolio</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#about">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#experience">Experience</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#skills">Skills</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#projects">Projects</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#contact">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </header>
+        body {
+            overflow-x: hidden;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+            <a class="navbar-brand" href="#">Welcome</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#experience">Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">My Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
 
-        <div class="title-slide" id="title-slide" style="background: url('images/pic03.jpg') center/cover no-repeat;">
-        <div class="text-center" style="padding: 40px; border-radius: 10px;">
-            <h1 class="display-3" style="font-weight: 600; color: white;">JVK CHAITANYA</h1>
-            <p class="lead" style="color: white;">Student at Texas A&M University, College Station <br> Pursuing Master's in Data Science</p>
+    <div id="title-slide" class="title-slide hidden">
+        <div class="text-center">
+            <h1 class="display-3 mb-4" style="text-shadow: 2px 2px 4px rgba(0,0,0,0.5);"><b>JVK Chaitanya</b></h1>
+            <h2 class="display-5 mb-4" style="text-shadow: 2px 2px 4px rgba(0,0,0,0.5);">Data Science Graduate Student</h2>
+            <h3 class="h5" style="text-shadow: 2px 2px 4px rgba(0,0,0,0.5);">Texas A&M University</h3>
         </div>
-        </div>
+    </div>
 
-        <section id="about" class="section">
+    <section id="about" class="section">
         <div class="container">
             <h2 class="mb-4">About Me</h2>
-            <div class="d-flex flex-column flex-md-row align-items-center">
-            <img src="images/WhatsApp Image 2024-09-11 at 11.31.18 PM.jpeg" alt="JVK Chaitanya" class="img-fluid rounded mr-md-4 mb-4 mb-md-0" style="width: 100%; max-width: 500px; height: auto; object-fit: cover; border-radius: 15px;">
-            <div style="col-md-6 order-md-1">
-            <p>I am a data-driven professional with a robust background in transforming and analyzing data to derive actionable business insights. My expertise spans across various tools such as Python, MySQL, Alteryx, and Excel, where I have honed my skills in data manipulation, transformation, and reporting. During my tenure as an associate at PwC, I delivered comprehensive data solutions, including report generation and process optimization, to support strategic decision-making for clients.</p>
-            <p>My problem-solving approach is centered on thoroughly understanding the core issue, implementing effective solutions, and continuously optimizing processes for enhanced efficiency. I am passionate about learning new tools and applying them to improve outcomes in both personal projects and professional settings.</p>
-            <p>Currently, I am actively seeking internship opportunities for Summer 2025 in the field of data science and analytics. I am eager to contribute my skills and knowledge to a dynamic team and gain valuable industry experience.</p>
-            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="images/WhatsApp Image 2024-09-11 at 11.31.18 PM.jpeg" alt="JVK Chaitanya" class="img-fluid rounded mb-4" style="width: 100%; max-width: 500px; height: auto; object-fit: cover; border-radius: 15px;">
+                </div>
+                <div class="col-md-6">
+                    <p>I am a data-driven professional with a robust background in transforming and analyzing data to derive actionable business insights. My expertise spans across various tools such as Python, MySQL, Alteryx, and Excel, where I have honed my skills in data manipulation, transformation, and reporting. During my tenure as an associate at PwC, I delivered comprehensive data solutions, including report generation and process optimization, to support strategic decision-making for clients.</p>
+                    <p>My problem-solving approach is centered on thoroughly understanding the core issue, implementing effective solutions, and continuously optimizing processes for enhanced efficiency. I am passionate about learning new tools and applying them to improve outcomes in both personal projects and professional settings.</p>
+                    <p>Currently, I am actively seeking internship opportunities for Summer 2025 in the field of data science and analytics. I am eager to contribute my skills and knowledge to a dynamic team and gain valuable industry experience.</p>
+                </div>
             </div>
         </div>
-        </section>
+    </section>
 
-        <section id="experience" class="section">
+    <section id="experience" class="section">
         <div class="container">
             <h2 class="mb-4">Experience</h2>
             <div class="timeline">
-            <div class="timeline-item">
-                <div class="timeline-date">08/2022 - 07/2024</div>
-                <div class="timeline-content">
-                <h3>Oracle Cloud Associate</h3>
-                <b>PwC Acceleration Centers, Bangalore, India</b>
-                <ul>
-                    <li>Led the transformation and loading of client data into Oracle Cloud Fusion, enhancing data integration and enabling the development of new applications and solutions.</li>
-                    <li>Automated data manipulation using Alteryx and Python, ensuring high data integrity and consistency throughout processes.</li>
-                    <li>Collaborated with cross-functional teams and clients to optimize data transformation workflows for smoother operations.</li>
-                    <li>Generated and analyzed data reports using MySQL, supporting accurate reconciliation and validation of loaded data.</li>
-                    <li>Streamlined data flows by implementing workflows and RESTful APIs, facilitating efficient data loading and enhancing system performance.</li>
-                    <li>Contributed to the ReportGPT initiative by developing an Alteryx and Python-based workflow to process Oracle Analytics catalog files, enabling better input generation for GenAI models.</li>
-                    <li>Developed profiling reports for the Assetization initiative, making new asset and warranty management modules accessible and user-friendly without requiring prior knowledge.</li>
-                </ul>
+                <div class="timeline-item">
+                    <div class="timeline-date">08/2022 - 07/2024</div>
+                    <div class="timeline-content">
+                        <h3>Oracle Cloud Associate</h3>
+                        <b>PwC Acceleration Centers, Bangalore, India</b>
+                        <ul>
+                            <li>Led the transformation and loading of client data into Oracle Cloud Fusion, enhancing data integration and enabling the development of new applications and solutions.</li>
+                            <li>Automated data manipulation using Alteryx and Python, ensuring high data integrity and consistency throughout processes.</li>
+                            <li>Collaborated with cross-functional teams and clients to optimize data transformation workflows for smoother operations.</li>
+                            <li>Generated and analyzed data reports using MySQL, supporting accurate reconciliation and validation of loaded data.</li>
+                            <li>Streamlined data flows by implementing workflows and RESTful APIs, facilitating efficient data loading and enhancing system performance.</li>
+                            <li>Contributed to the ReportGPT initiative by developing an Alteryx and Python-based workflow to process Oracle Analytics catalog files, enabling better input generation for GenAI models.</li>
+                            <li>Developed profiling reports for the Assetization initiative, making new asset and warranty management modules accessible and user-friendly without requiring prior knowledge.</li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-            <div class="timeline-item">
-                <div class="timeline-date">03/2022 - 08/2022</div>
-                <div class="timeline-content">
-                <h3>Intern</h3>
-                <b>PwC Acceleration Centers, Bangalore, India</b>
-                <ul>
-                    <li>Developed proficiency in using MySQL for generating data reports and insights, strengthening analytical skills and contributing to data-driven decision-making.</li>
-                    <li>Completed training on Alteryx and Python programming, enhancing my ability to support data conversion processes and demonstrating a commitment to continuous learning and professional growth.</li>
-                    <li>Gained familiarity with Oracle Cloud ERP modules, such as Product Information Management and Supply Chain Management, proactively expanding my understanding of key enterprise functions.</li>
-                    <li>Shadowed associates to learn the complexities of data conversions, including data transformation and loading, engaging in collaborative learning to better understand and contribute to team processes.</li>
-                </ul>
+                <div class="timeline-item">
+                    <div class="timeline-date">03/2022 - 08/2022</div>
+                    <div class="timeline-content">
+                        <h3>Intern</h3>
+                        <b>PwC Acceleration Centers, Bangalore, India</b>
+                        <ul>
+                            <li>Developed proficiency in using MySQL for generating data reports and insights, strengthening analytical skills and contributing to data-driven decision-making.</li>
+                            <li>Completed training on Alteryx and Python programming, enhancing my ability to support data conversion processes and demonstrating a commitment to continuous learning and professional growth.</li>
+                            <li>Gained familiarity with Oracle Cloud ERP modules, such as Product Information Management and Supply Chain Management, proactively expanding my understanding of key enterprise functions.</li>
+                            <li>Shadowed associates to learn the complexities of data conversions, including data transformation and loading, engaging in collaborative learning to better understand and contribute to team processes.</li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
             </div>
         </div>
-        </section>
-        <section id="skills" class="section">
-            <div class="container">
+    </section>
+
+    <section id="skills" class="section">
+        <div class="container">
             <h2 class="mb-4">My Skills</h2>
             <div class="row">
                 <div class="col-md-6 mb-4">
-                <h3>Programming Languages</h3>
-                <ul>
-                    <li>Python</li>
-                    <li>SQL</li>
-                    <li>NoSQL</li>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>PHP</li>
-                </ul>
+                    <h3>Programming Languages</h3>
+                    <ul>
+                        <li>Python</li>
+                        <li>SQL</li>
+                        <li>NoSQL</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>PHP</li>
+                    </ul>
                 </div>
                 <div class="col-md-6 mb-4">
-                <h3>Data Science & Analytics</h3>
-                <ul>
-                    <li>Pandas</li>
-                    <li>Matplotlib</li>
-                    <li>Sklearn</li>
-                    <li>NumPy</li>
-                    <li>ETL</li>
-                    <li>TensorFlow</li>
-                    <li>Dask</li>
-                    <li>PowerBI</li>
-                </ul>
+                    <h3>Data Science & Analytics</h3>
+                    <ul>
+                        <li>Pandas</li>
+                        <li>Matplotlib</li>
+                        <li>Sklearn</li>
+                        <li>NumPy</li>
+                        <li>ETL</li>
+                        <li>TensorFlow</li>
+                        <li>Dask</li>
+                        <li>PowerBI</li>
+                    </ul>
                 </div>
                 <div class="col-md-6 mb-4">
-                <h3>Tools & Technologies</h3>
-                <ul>
-                    <li>Alteryx</li>
-                    <li>Microsoft Office Suite</li>
-                    <li>Oracle Cloud Fusion (ERP Cloud)</li>
-                    <li>Oracle Analytics</li>
-                    <li>GitHub</li>
-                    <li>Jira</li>
-                    <li>Docker</li>
-                    <li>MongoDB</li>
-                    <li>Langchain</li>
-                </ul>
+                    <h3>Tools & Technologies</h3>
+                    <ul>
+                        <li>Alteryx</li>
+                        <li>Microsoft Office Suite</li>
+                        <li>Oracle Cloud Fusion (ERP Cloud)</li>
+                        <li>Oracle Analytics</li>
+                        <li>GitHub</li>
+                        <li>Jira</li>
+                        <li>Docker</li>
+                        <li>MongoDB</li>
+                        <li>Langchain</li>
+                    </ul>
                 </div>
                 <div class="col-md-6 mb-4">
-                <h3>Soft Skills</h3>
-                <ul>
-                    <li>Problem-Solving</li>
-                    <li>Adaptability</li>
-                    <li>Collaboration</li>
-                    <li>Business Acumen</li>
-                </ul>
+                    <h3>Soft Skills</h3>
+                    <ul>
+                        <li>Problem-Solving</li>
+                        <li>Adaptability</li>
+                        <li>Collaboration</li>
+                        <li>Business Acumen</li>
+                    </ul>
                 </div>
-            </div>
-            </div>
-        </section>
-        </section>
-        <section id="projects" class="section">
-        <div class="container">
-            <h2 class="mb-4">Projects</h2>
-            <!-- First Project -->
-            <div class="row mb-5 align-items-center">
-            <div class="col-md-6 mb-4 mb-md-0">
-                <img src="images/img_6287_copy_0.jpg" alt="Birds Classification" class="img-fluid rounded" style="width: 100%; height: auto; object-fit: cover;">
-            </div>
-            <div class="col-md-6">
-                <h3>Bird Species Classification</h3>
-                <p><b>Personal Project</b> <br>(03/2023 - 04/2023)</p>
-                <p>Developed a CNN-based image classification application to identify bird species from user-provided images.</p>
-                <ul>
-                <li>Achieved 95.8% accuracy in classifying 525 bird species using EfficientNet-B0.</li>
-                <li>Enhanced data handling with image preprocessing, augmentation, and categorization.</li>
-                <li>Utilized advanced optimization techniques like early stopping and model checkpoints.</li>
-                <li>Built and deployed a web application for bird species identification via image URLs.</li>
-                <li>Project available on <a href="https://github.com/jvk1chaitanya/Birds-Species-Classification"><b>GitHub</b></a></li>
-                </ul>
-            </div>
-            </div>
-
-            <!-- Second Project -->
-            <div class="row mb-5 align-items-center">
-            <div class="col-md-6 mb-4 mb-md-0 order-md-2">
-                <img src="images/08207a1a4c3383abed17d2995786c44959ceaa91-1140x620.webp" alt="Tweet Sentiment" class="img-fluid rounded" style="width: 100%; height: auto; object-fit: cover;">
-            </div>
-            <div class="col-md-6 order-md-1">
-                <h3>Tweet Sentiment Classification</h3>
-                <p><b>Personal Project</b> <br>(02/2023 - 03/2023)</p>
-                <p>Developed an LSTM-based sentiment classification model to categorize tweet sentiments.</p>
-                <ul>
-                <li>Achieved 87.98% accuracy in predicting tweet sentiments (positive, negative, neutral).</li>
-                <li>Processed the Twitter sentiment dataset by cleaning text and tokenizing tweets.</li>
-                <li>Utilized LSTM architecture with embedding, dropout, and dense layers.</li>
-                <li>Applied early stopping and model checkpointing to enhance model training.</li>
-                <li>Project available on <a href="https://github.com/jvk1chaitanya/twitter-sentiment-model"><b>GitHub</b></a></li>
-                </ul>
-            </div>
             </div>
         </div>
-        </section>
+    </section>
+
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 class="mb-4">Projects</h2>
+            <div class="row mb-5 align-items-center">
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <img src="images/img_6287_copy_0.jpg" alt="Birds Classification" class="img-fluid rounded" style="width: 100%; height: auto; object-fit: cover;">
+                </div>
+                <div class="col-md-6">
+                    <h3>Bird Species Classification</h3>
+                    <p><b>Personal Project</b> <br>(03/2023 - 04/2023)</p>
+                    <p>Developed a CNN-based image classification application to identify bird species from user-provided images.</p>
+                    <ul>
+                        <li>Achieved 95.8% accuracy in classifying 525 bird species using EfficientNet-B0.</li>
+                        <li>Enhanced data handling with image preprocessing, augmentation, and categorization.</li>
+                        <li>Utilized advanced optimization techniques like early stopping and model checkpoints.</li>
+                        <li>Built and deployed a web application for bird species identification via image URLs.</li>
+                        <li>Project available on <a href="https://github.com/jvk1chaitanya/Birds-Species-Classification"><b>GitHub</b></a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row mb-5 align-items-center">
+                <div class="col-md-6 mb-4 mb-md-0 order-md-2">
+                    <img src="images/08207a1a4c3383abed17d2995786c44959ceaa91-1140x620.webp" alt="Tweet Sentiment" class="img-fluid rounded" style="width: 100%; height: auto; object-fit: cover;">
+                </div>
+                <div class="col-md-6 order-md-1">
+                    <h3>Tweet Sentiment Classification</h3>
+                    <p><b>Personal Project</b> <br>(02/2023 - 03/2023)</p>
+                    <p>Developed an LSTM-based sentiment classification model to categorize tweet sentiments.</p>
+                    <ul>
+                        <li>Achieved 87.98% accuracy in predicting tweet sentiments (positive, negative, neutral).</li>
+                        <li>Processed the Twitter sentiment dataset by cleaning text and tokenizing tweets.</li>
+                        <li>Utilized LSTM architecture with embedding, dropout, and dense layers.</li>
+                        <li>Applied early stopping and model checkpointing to enhance model training.</li>
+                        <li>Project available on <a href="https://github.com/jvk1chaitanya/twitter-sentiment-model"><b>GitHub</b></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
 
         <section id="contact" class="section">
         <div class="container">
@@ -327,6 +332,22 @@
                 observer.observe(section);
             });
             });
+            document.addEventListener('click', function(event) {
+            var isClickInside = document.querySelector('header').contains(event.target);
+            if (!isClickInside) {
+                var navbarCollapse = document.querySelector('.navbar-collapse');
+                if (navbarCollapse.classList.contains('show')) {
+                    $('.navbar-collapse').collapse('hide');
+                }
+            }
+        });
+
+        document.querySelectorAll('.nav-link').forEach(item => {
+            item.addEventListener('click', () => {
+                $('.navbar-collapse').collapse('hide');
+            });
+        });
         </script>
         </body>
     </html>
+
